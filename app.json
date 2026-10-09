@@ -7,13 +7,9 @@
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lina.fitnesstrackerapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,22 +24,20 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router",
-      "expo-font"
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Koulen-Regular.ttf"
+          ]
+        }
+      ],
+      "expo-asset"
     ],
-    "experiments": {
-      "typedRoutes": true
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "fonts": {
-      "Koulen": "./assets/fonts/Koulen-Regular.ttf"
-    },
     "extra": {
-      "router": {
-        "origin": false
-      },
       "eas": {
         "projectId": "f31552f2-e415-4ea6-8cae-153fc4d7b052"
       }
